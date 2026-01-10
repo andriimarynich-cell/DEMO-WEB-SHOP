@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "name": "Build your own computer",
+      "quantity": 1,
+      "expectedPrice": 1200.00
+    },
+    {
+      "name": "Simple Computer",
+      "quantity": 2,
+      "expectedPrice": 800.00
+    }
+  ],
+  "currency": "$"
+}
