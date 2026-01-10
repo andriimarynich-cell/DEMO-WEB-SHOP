@@ -1,6 +1,5 @@
 // pages/BasePage.ts
-import { Page, Locator, expect } from '@playwright/test';
-
+import { Page, Locator } from '@playwright/test';
 export default class BasePage {
     readonly page: Page;
 
