@@ -7,7 +7,7 @@ test('Place order with multiple products (apply price calculation checks)', asyn
   const cartPage = new CartPage(page);
   const productPage = new ProductPage(page);
 
-  // 1️Відкриваємо корзину
+  // Відкриваємо корзину
   await cartPage.open();
 
   // Якщо пуста — додаємо продукти
@@ -21,13 +21,13 @@ test('Place order with multiple products (apply price calculation checks)', asyn
   }
 
 
-  // 3️⃣ Перевіряємо що:
+  // Перевіряємо що:
   // - товар є
   // - total price є
   // - не залежить від quantity
   await cartPage.verifyCartHasItemsAndPrice();
 
-  // 4️⃣ Checkout
+  //  Checkout
   await cartPage.agreeWithTerms();
   await cartPage.proceedToCheckout();
 });
